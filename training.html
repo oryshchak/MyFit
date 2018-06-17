@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MyFit</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="training.css">
+  <script>function programVisible() { document.getElementById("program").style.visibility = "visible";} </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="motto">A champion is someone who gets up when he can't</div>
+        <div class="navigation">
+            <nav>
+                <a class="this-page" href="training.html">Training</a>
+                <a href="programs.html">Programs</a>
+                <a href="charts.html">Charts</a>
+                <a href="nutrition.html">Nutrition</a>
+            </nav>
+        </div>
+        <div class="user-help">
+        <div class="user">
+            <i class="fas fa-user-alt"></i>
+        </div>
+        <div class="help">
+            <i class="fas fa-question"></i>
+        </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="programs-list">
+            Select a program:
+            <select name="programs">
+                <option value="Legs">Legs</option>
+                <option value="Back+biceps">Back + biceps</option>
+                <option value="Chest+triceps">Chest + triceps</option>
+            </select>
+        </div>
+        <div class="start">
+            <button class="start-btn" type="button" onclick="programVisible()">Start</button>
+        </div>
+        <div id="program">
+            <!-- insert selected program here-->
+            <div class="date">
+                Date <input type="date" name="training-date">
+            </div>
+            <div class="legs-program">
+                    <h4>Legs</h4>
+                        <table>
+                                <tr>
+                                    <th>Exercise</th>
+                                    <th>Reps</th>
+                                    <th>Kg</th>
+                                    <th>Km</th>
+                                    <th>Rest</th>
+                                    <th>Comments</th>
+                                    <th>Status</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="exercise" value="Barbell Squat"></td>
+                                    <td><input type="text" name="reps" value="10"></td>
+                                    <td><input type="text" name="kg" value="40"></td>
+                                    <td><input type="text" name="km" value=""></td>
+                                    <td><input type="text" name="rest" value="1 min"></td>
+                                    <td><input type="text" name="comments" value=""></td>
+                                    <td style="text-align: center"><input type="checkbox" name="status" value=""></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="exercise" value="Barbell Squat"></td>
+                                    <td><input type="text" name="reps" value="10"></td>
+                                    <td><input type="text" name="kg" value="45"></td>
+                                    <td><input type="text" name="km" value=""></td>
+                                    <td><input type="text" name="rest" value="1 min"></td>
+                                    <td><input type="text" name="comments" value=""></td>
+                                    <td style="text-align: center"><input type="checkbox" name="status" value=""></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="exercise" value="Barbell Squat"></td>
+                                    <td><input type="text" name="reps" value="10"></td>
+                                    <td><input type="text" name="kg" value="50"></td>
+                                    <td><input type="text" name="km" value=""></td>
+                                    <td><input type="text" name="rest" value="1 min"></td>
+                                    <td><input type="text" name="comments" value=""></td>
+                                    <td style="text-align: center"><input type="checkbox" name="status" value=""></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="exercise" value="Dumbell Lunges"></td>
+                                    <td><input type="text" name="reps" value="12"></td>
+                                    <td><input type="text" name="kg" value="10"></td>
+                                    <td><input type="text" name="km" value=""></td>
+                                    <td><input type="text" name="rest" value="1 min"></td>
+                                    <td><input type="text" name="comments" value=""></td>
+                                    <td style="text-align: center"><input type="checkbox" name="status" value=""></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="exercise" value="Dumbell Lunges"></td>
+                                    <td><input type="text" name="reps" value="12"></td>
+                                    <td><input type="text" name="kg" value="10"></td>
+                                    <td><input type="text" name="km" value=""></td>
+                                    <td><input type="text" name="rest" value="1 min"></td>
+                                    <td><input type="text" name="comments" value=""></td>
+                                    <td style="text-align: center"><input type="checkbox" name="status" value=""></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="exercise" value="Dumbell Lunges"></td>
+                                    <td><input type="text" name="reps" value="12"></td>
+                                    <td><input type="text" name="kg" value="10"></td>
+                                    <td><input type="text" name="km" value=""></td>
+                                    <td><input type="text" name="rest" value="1 min"></td>
+                                    <td><input type="text" name="comments" value=""></td>
+                                    <td style="text-align: center"><input type="checkbox" name="status" value=""></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="exercise" value="Leg Press"></td>
+                                    <td><input type="text" name="reps" value="15"></td>
+                                    <td><input type="text" name="kg" value="50"></td>
+                                    <td><input type="text" name="km" value=""></td>
+                                    <td><input type="text" name="rest" value="1 min"></td>
+                                    <td><input type="text" name="comments" value=""></td>
+                                    <td style="text-align: center"><input type="checkbox" name="status" value=""></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="exercise" value="Leg Press"></td>
+                                    <td><input type="text" name="reps" value="15"></td>
+                                    <td><input type="text" name="kg" value="55"></td>
+                                    <td><input type="text" name="km" value=""></td>
+                                    <td><input type="text" name="rest" value="1 min"></td>
+                                    <td><input type="text" name="comments" value=""></td>
+                                    <td style="text-align: center"><input type="checkbox" name="status" value=""></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="exercise" value="Leg Press"></td>
+                                    <td><input type="text" name="reps" value="15"></td>
+                                    <td><input type="text" name="kg" value="60"></td>
+                                    <td><input type="text" name="km" value=""></td>
+                                    <td><input type="text" name="rest" value="1 min"></td>
+                                    <td><input type="text" name="comments" value=""></td>
+                                    <td style="text-align: center"><input type="checkbox" name="status" value=""></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="exercise" value="Leg Press"></td>
+                                    <td><input type="text" name="reps" value="15"></td>
+                                    <td><input type="text" name="kg" value="60"></td>
+                                    <td><input type="text" name="km" value=""></td>
+                                    <td><input type="text" name="rest" value="1 min"></td>
+                                    <td><input type="text" name="comments" value=""></td>
+                                    <td style="text-align: center"><input type="checkbox" name="status" value=""></td>
+                                </tr>
+                            </table>
+                </div>
+                <div class="buttons">
+                   <button class="new-exercise" type="button" onclick="">Add new exercise</button>
+                   <button class="save-new-prgm" type="button" onclick="">Save as new program</button>
+                </div>  
+        <div class="save-results">
+            <button class="save-results-btn" type="button" onclick="">Save</button>
+        </div>
+        </div>
+    </main>
+</body>
+</html>

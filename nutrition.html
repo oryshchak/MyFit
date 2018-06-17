@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MyFit</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="nutrition.css">
+  <script src="nutrition.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="motto">A champion is someone who gets up when he can't</div>
+        <div class="navigation">
+            <nav>
+                <a href="training.html">Training</a>
+                <a href="programs.html">Programs</a>
+                <a href="charts.html">Charts</a>
+                <a class="this-page" href="nutrition.html">Nutrition</a>
+            </nav>
+        </div>
+        <div class="user-help">
+        <div class="user">
+            <i class="fas fa-user-alt"></i>
+        </div>
+        <div class="help">
+            <i class="fas fa-question"></i>
+        </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="calculator">
+            <h3>Calories calculator</h3>
+            Your gender:
+            <select id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            Your weight(kg):
+            <input type="text" id="weight">
+            Your height(cm):
+            <input type="text" id="height">
+            Your age:
+            <input type="text" id="age">
+            <input class="calculate-btn" type="button" onclick="caloriesCalculator()" value="Calculate">
+        </div>
+        <div class="results">
+            Your daily rate is <span id="calories-result"></span> calories
+            <input type="button" onclick="caloriesCalculator()" value="Re-calculate">
+        </div>
+    </main>
+</body>

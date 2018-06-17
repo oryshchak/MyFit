@@ -1,0 +1,66 @@
+@import url('https://use.fontawesome.com/releases/v5.0.13/css/all.css');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+    background-image: url("background.jpg");
+    background-color: #E5E4E2;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.motto {
+    /*color: white;*/
+    color:black;
+    font-size: 35px;
+    text-align: center;
+    margin: 30px;
+}
+.header {
+    display: inline;
+}
+a {
+    padding: 20px;
+    font-size: 20px;
+}
+a:link, a:visited {
+    color:black;
+    text-decoration: none;
+}
+a:active {
+    color: #54C571;
+    text-decoration: none;
+}
+a.this-page {
+    color: #54C571;
+}
+.user-help {
+    display: inline;
+    margin-left: 95%;
+}
+.help {
+    display: inline;
+    margin-left: 10px;
+}
+.user {
+    display: inline;
+}
+.main {
+    margin-top: 30px;
+}
+#calories-result {
+    color: #54C571;
+    font-size: 20px;
+}
+#gender, #weight, #height, #age {
+    display: block;
+}
+.calculate-btn {
+    border: 1px solid white;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #54C571;
+    color: white;
+    padding: 5px 20px;
+    margin: 15px 5px;
+}
