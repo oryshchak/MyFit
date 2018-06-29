@@ -3,15 +3,16 @@
 
 body {
     background-image: url("background3.png");
+    background-repeat: no-repeat;
     background-color: #000000;
+    background-size: 100%;
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
     display: flex;
     flex-direction: column;
 }
 .motto {
-    /*color: white;*/
-    color:black;
+    color: white;
     font-size: 35px;
     text-align: center;
     margin: 30px;
